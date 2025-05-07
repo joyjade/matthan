@@ -1,0 +1,6 @@
+type: pages
+label: Entries
+info: "{{ page.date.toDate('d.m.Y') }}"
+template: entry
+empty: No articles yet
+sortBy: date desc

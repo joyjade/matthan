@@ -1,0 +1,13 @@
+Title: CottonwoodCathedral
+
+----
+
+Text: painting~
+
+----
+
+Tags: painting, art
+
+----
+
+Uuid: 3b9ICqE7upfzRDtf
