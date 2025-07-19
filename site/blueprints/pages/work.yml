@@ -1,0 +1,53 @@
+title: Work
+# preset: page
+# num: zero
+
+status:
+  draft: true
+  listed: true
+  unlisted: true
+
+image:
+  ratio: 16/9
+  back: white
+  cover: true
+
+
+columns:
+  right:
+    width: 2/3 
+    sections: 
+      gallery:
+        type: files
+        layout: cards
+        label: Work Images
+        template: work-image
+        # info: "{{ file.dimensions }}"
+  left:
+    width:  1/3
+    fields:
+      materials:
+        type: textarea
+        buttons: 
+          - italic
+          - bold
+          - link
+          - code
+          - ul
+          - ol
+          - |
+      dimensions:
+        # width : 1/2
+        type: text
+      year:
+        # width : 1/2
+        type: number
+
+      tags:
+        label: Type
+        type: tags
+        options:
+          - painting
+          - sculpture
+
+  

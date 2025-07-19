@@ -18,7 +18,6 @@
   <h1><a href="<?= $entry->url() ?>"><?= $entry->title()->html() ?></a></h1>
   <p><?= $entry->text()->excerpt(300) ?></p>
 </article>
-
 <?php endforeach ?>
 
 <section class="pagination">

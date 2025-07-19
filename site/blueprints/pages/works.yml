@@ -1,0 +1,18 @@
+title: Works
+
+
+sections:
+  works:
+    type: pages
+    label: Works
+    template: work
+    layout: table
+    columns:
+      dimensions: 
+        width: 1/6
+      year: 
+        width: 1/6
+      tags:
+        width: 1/6
+        label: Medium 
+

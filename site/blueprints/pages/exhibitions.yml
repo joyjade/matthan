@@ -1,0 +1,14 @@
+title: Exhibitions
+type: pages
+
+# options:
+#   url: false
+#   status: false
+#   delete: false
+
+sections:
+  exhibitions:
+    type: pages
+    layout: list
+    template: exhibition
+    empty: No exhibitions yet

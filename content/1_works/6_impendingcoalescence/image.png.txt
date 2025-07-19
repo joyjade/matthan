@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: DI1iGn4VaBq2qgvL
+
+----
+
+Template: work-image

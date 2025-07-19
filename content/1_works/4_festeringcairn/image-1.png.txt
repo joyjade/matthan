@@ -1,0 +1,5 @@
+Uuid: 1HxMAVe67z9i2i4W
+
+----
+
+Template: work-image

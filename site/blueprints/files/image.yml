@@ -1,0 +1,34 @@
+title: Image
+
+image:
+  cover: true
+  ratio: 4/5
+  back: black
+
+columns:
+  main:
+    width: 1/2
+    sections:
+      content:
+        type: fields
+        fields:
+          caption:
+            label: Caption
+            type: textarea
+            size: medium
+  sidebar:
+    width: 1/2
+    sections:
+      meta:
+        type: fields
+        fields:
+          alt:
+            label: Alternative Text
+            type: text
+          photographer:
+            label: Photogapher
+            type: text
+            width: 2/3
+          link:
+            label: Link
+            type: url

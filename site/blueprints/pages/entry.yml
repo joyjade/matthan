@@ -20,6 +20,10 @@ columns:
       text:
         type: textarea
         size: large
+        files:
+          query: site.files
+        uploads:
+          parent: site
 
   sidebar:
     width: 1/3

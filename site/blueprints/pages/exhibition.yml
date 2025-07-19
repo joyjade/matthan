@@ -1,0 +1,21 @@
+title: Exhibition
+
+# options:
+#   url: false
+#   status: false
+#   delete: false
+
+sections:
+  gallery:
+    type: files
+    label: Images
+    template: work-image
+
+  info:
+    type: fields
+    fields:
+      date: 
+        type: date
+      description: 
+        type: textarea
+  

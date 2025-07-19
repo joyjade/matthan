@@ -1,0 +1,25 @@
+Caption: 
+
+----
+
+Alt: 
+
+----
+
+Photographer: 
+
+----
+
+Link: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: vlXvf2z1OlRjafA0
+
+----
+
+Template: work-image

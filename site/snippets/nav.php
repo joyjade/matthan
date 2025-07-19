@@ -12,10 +12,11 @@
   <?= css(['assets/css/global.css', 'assets/type/fonts.css', 'assets/css/mobile.css', '@auto',]) ?>
 </head>
 
+
 <body class="">
   <div class="header">
     <div class="title">
-      <a href="<?= $site->url() ?>"><?= $site->title() ?></a>
+      <a href="<?= $site->url() ?>"><?= $site->title()->lower() ?></a>
     </div>
   </div>
 
@@ -23,7 +24,7 @@
     <?php foreach ($site->children()->listed() as $item): 
       ?>
       <div>
-        <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html() ?></a>
+        <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html()->lower() ?></a>
       </div>
     <?php endforeach ?>
 </nav>
