@@ -1,0 +1,38 @@
+site: Home
+
+options:
+  changeStatus: false
+  delete: false
+
+#   url: false
+
+columns:
+  - width: 1/2
+    fields:
+      art:
+        label: Art
+        type: files
+        layout: cards
+        size: huge
+        empty: No image chosen
+        cover: true
+      artlink:
+        label: Link
+        type: pages
+        multiple: false
+  - width: 1/2
+    fields:
+      tattoo:
+        label: Tattoos
+        type: files
+        layout: cards
+        size: huge
+        empty: No image chosen
+      tattoolink:
+        label: Link
+        type: pages
+        multiple: false
+
+
+
+

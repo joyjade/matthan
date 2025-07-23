@@ -2,7 +2,7 @@
   $works = $page->children()->listed()->flip();
 ?>
 
-<section class="main">
+<main>
 
   <?php foreach($works as $work): ?>
     <div class="row">
@@ -20,6 +20,6 @@
         </figure>
     </div>
   <?php endforeach ?>
-</section>
+  </main>
 
 <?php snippet('footer') ?>

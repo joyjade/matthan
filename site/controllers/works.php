@@ -3,7 +3,7 @@
 return function($page) {
 
 // fetch the basic set of pages
-$entries = $page->children()->listed()->flip();
+$entries = $page->children()->listed();
 
 // fetch all tags
 $tags = $entries->pluck('tags', ',', true);
@@ -14,7 +14,7 @@ if($tag = param('tag')) {
 }
 
 // apply pagination
-$entries   = $entries->paginate(10);
+$entries   = $entries->paginate(20);
 $pagination = $entries->pagination();
 
 return compact('entries', 'tags', 'tag', 'pagination');

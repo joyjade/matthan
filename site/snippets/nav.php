@@ -13,7 +13,7 @@
 </head>
 
 
-<body class="">
+<body class="<?= $page->template() ?>">
   <div class="header">
     <div class="title">
       <a href="<?= $site->url() ?>"><?= $site->title()->lower() ?></a>

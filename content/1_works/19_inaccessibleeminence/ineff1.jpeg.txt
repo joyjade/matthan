@@ -1,0 +1,9 @@
+Sort: 1
+
+----
+
+Uuid: hcLD3kF7BBgQdxG8
+
+----
+
+Template: work-image

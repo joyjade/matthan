@@ -1,0 +1,11 @@
+type: pages
+label: Works
+template: work
+text: " {{page.title}}"
+info: "{{ page.year }}"
+layout: cards
+image:
+  src: page.image
+  ratio: 3/2
+  back: white
+  cover: true

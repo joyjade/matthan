@@ -1,0 +1,26 @@
+title: Gallery
+type: pages
+
+# columns:
+#   left:
+#     width: 2/3
+#     sections:
+#       listed:
+#         extends: sections/works
+#         label: Works
+#         status: listed
+
+#   right:
+#     width: 1/3
+#     sections:
+#       drafts:
+#         extends: sections/works
+#         label: Drafts
+#         status: draft
+#         layout: list
+
+#       unlisted:
+#         extends: sections/works
+#         label: Unlisted
+#         status: unlisted
+#         layout: list

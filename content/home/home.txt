@@ -2,4 +2,31 @@ Title: Home
 
 ----
 
+Art: - file://Ms9R7x7fzLpoYH0V
+
+----
+
+Artlink: - page://BQo9mezZbCll5qR0
+
+----
+
+Tattoo: - file://BuoSqzYe5KUTTQlK
+
+----
+
+Tattoolink: - page://a1MDZav5wQ6G373h
+
+----
+
+Files: 
+
+----
+
+Pages:
+
+- page://BQo9mezZbCll5qR0
+- page://a1MDZav5wQ6G373h
+
+----
+
 Uuid: CUSuUSKNgYkShgDt

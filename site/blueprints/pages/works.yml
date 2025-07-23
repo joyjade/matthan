@@ -7,6 +7,8 @@ sections:
     label: Works
     template: work
     layout: table
+    limit: 30
+    search: true
     columns:
       dimensions: 
         width: 1/6
