@@ -1,5 +1,67 @@
 title: Site
 
-sections:
-  pages:
-    type: pages
+tabs:
+  main: 
+    sections: 
+      art: 
+        label: Art
+        type: pages
+        query: site.children.listed.filterBy('folder', 'art')
+      blog:
+        label: Notes
+        type: pages
+        template: blog
+      tattoos:
+        label: Goathead Studios
+        type: pages
+        template: tattoos
+
+
+
+  info: 
+    sections: 
+      about:
+        type: pages
+        query: site.find("info").children.listed
+
+  # art: 
+  #   columns: 
+  #     - width: 1/2
+  #       sections:  
+  #         work:
+  #           label: Works
+  #           type: pages
+  #           query: site.find("works").children.listed
+  #           # layout: table
+  #           limit: 10
+
+  #     - width: 1/2
+  #       sections: 
+  #         exhibitions:
+  #           label: Exhibitions
+  #           type: pages
+  #           query: site.find("exhibitions").children.listed
+  #           layout: table
+  # blog: 
+  #   sections:
+  #     blog:
+  #       label: Notes
+  #       type: pages
+  #       query: site.find("blog").children.listed
+ 
+  # tattoos:
+  #   sections: 
+  #     tattoos:
+  #       type: pages
+  #       query: site.children.listed.filterBy("folder", "blog")
+
+
+    
+
+  # pages:
+  #   type: pages
+
+
+
+  
+  

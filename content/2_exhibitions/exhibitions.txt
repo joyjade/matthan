@@ -2,4 +2,8 @@ Title: Exhibitions
 
 ----
 
+Folder: art
+
+----
+
 Uuid: k84wAaXCAbiviZOo
