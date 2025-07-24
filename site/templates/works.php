@@ -2,6 +2,9 @@
 $works = $page->children()->listed()->flip();?>
 <main>
   <ul class="tags">
+    <li>
+      <a href="<?= url('works') ?>">all</a>
+    </li>
     <?php foreach($tags as $tag): ?>
     <li>
       <a href="<?= url('works', ['params' => ['tag' => $tag]]) ?>">

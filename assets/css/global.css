@@ -1,5 +1,6 @@
 :root {
   --main-font: Univers;
+  --second-font: "Univers Condensed";
   --primary-color: #FFF8F3;
   --secondary-color: #FF0000;
   --bg-color: #FFFEDB;
@@ -51,7 +52,7 @@ body {
   background-color: var(--bg-color);
 }
 
-nav {
+nav ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
@@ -59,11 +60,11 @@ nav {
   padding-top: 0.25rem;
 }
 
-nav div:not(:last-of-type) {
+nav li:not(:last-of-type) {
   padding-right: 0.5rem;
 }
 
-nav div:nth-of-type(2){
+nav li:nth-of-type(2){
   flex-grow: 1
 }
 
@@ -75,13 +76,16 @@ nav a.active {
 ul.tags {
   padding-bottom: 1rem;
   display: flex;
+  flex-flow: column;
+  width: 165px;
+  float: left;
 }
 
 .tags li {
   padding-right: 0.25rem;
 }
 
-/* LAYOUT */
+/* HOME */
 
 .home main section {
   width: 100%;
@@ -93,26 +97,13 @@ ul.tags {
   grid-gap: 0.75rem;
   align-items: flex-end;
   height: 88vh;
-
-  /* display: grid;
-  grid-gap: 0.75rem;
-  grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr; */
 }
 
 main {
   padding-bottom: 2rem;
 }
 
-section.works {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 0.75rem;
-}
-
-.item {
-  /* width: 25%; */
-}
+/* EXHIBITION */
 
 .row {
   display: flex; 
@@ -138,9 +129,9 @@ section.works {
   padding-right: 1rem;
 }
 
-.row h1, .works h1 {
+.row h1, .works h1, .work h1, .tattoos h1 {
   font-weight: 800;
-  font-family: Univers Condensed;
+  font-family: var(--second-font);
   font-size: 1.3rem;
   padding-bottom: 0.2rem;
 }
@@ -150,8 +141,93 @@ p.stretch {
 }
 
 
-/* STYLES */
+/* WORKS */
+
+section.works {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0.75rem;
+}
 
 .works h1 {
   font-size: 1rem;
+}
+
+.work section, .work h1 {
+  padding-top: 2rem;
+  font-size: 1.5rem;
+}
+
+.work section > div {
+  max-width: 33.33%;
+  display: inline-block;
+  padding-right: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.work section > div:nth-of-type(3n) {
+  padding-right: 0;
+}
+
+.work section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+figcaption {
+  font-size: 1rem;
+  padding-bottom: 0.25rem;
+}
+
+/* TATTOOS */
+
+.tattoos main {
+  display: flex;
+}
+
+.tattoos section {
+  width: 50%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+.tattoos section:first-of-type {
+  padding-left: 0;
+  border-right: var(--thin-border);
+}
+.tattoos section:last-of-type {
+  padding-right: 0;
+}
+
+section.tattoos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tattoos p {
+  padding-bottom: 2rem;
+}
+
+section.tattoos figure {
+  /* width: 12.5%;
+  height: 180px; */
+  width: 25%;
+  height: auto;
+  margin-bottom: 0.75rem;
+  overflow: hidden;
+  padding-right: 0.75rem;
+}
+
+section.tattoos figure:nth-of-type(4n) {
+  padding-right: 0;
+}
+
+.tattoos .cover {
+  width: 100%;
+  max-width: 700px;
+}
+
+.tattoos button {
+  border: var(--thin-border);
+  padding: 1rem 1.75rem;
 }

@@ -1,4 +1,4 @@
-title: Work Image
+title: Tattoo Image
 
 accept:
   mime: image/*
@@ -7,8 +7,8 @@ image:
   cover: true
 
 fields:
-  caption:
-    label: Caption
+  title:
+    label: Name
     type: textarea
     size: medium
     width: 1/2

@@ -1,0 +1,9 @@
+Sort: 5
+
+----
+
+Uuid: oYNM3SMD5rYf9MpM
+
+----
+
+Template: work-image

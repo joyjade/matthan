@@ -21,10 +21,11 @@
   </div>
 
 	<nav>
-    <?php foreach ($site->children()->listed() as $item): 
-      ?>
-      <div>
+    <ul>
+    <?php foreach ($site->children()->listed() as $item): ?>
+      <li>
         <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html()->lower() ?></a>
-      </div>
+    </li>
     <?php endforeach ?>
+    </ul>
 </nav>

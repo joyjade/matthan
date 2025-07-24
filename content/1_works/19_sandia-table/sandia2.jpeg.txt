@@ -1,0 +1,21 @@
+Caption:
+
+Sandia table and benches 
+
+(installation view)
+
+----
+
+Alt: 
+
+----
+
+Sort: 2
+
+----
+
+Uuid: LNUUOFIs94WxOF35
+
+----
+
+Template: work-image

@@ -1,0 +1,29 @@
+title: Tattoos
+
+columns:
+  - width: 1/3
+    sections:
+      info: 
+        type: fields
+        fields:
+          name:
+            type: text
+            label: Studio Name
+          cover:
+            type: files
+          description:
+            type: textarea
+          booking:
+            type: link
+            label: Calendly link
+      pages:
+        type: pages
+        label: FAQ
+        # template: faq
+  - width: 2/3
+    sections:
+      gallery:
+        type: files
+        label: Tattoos
+        layout: cards
+        template: tattoo-image

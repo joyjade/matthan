@@ -1,0 +1,17 @@
+Caption: hardware detail (4x)
+
+----
+
+Alt: 
+
+----
+
+Sort: 3
+
+----
+
+Uuid: rePwpwDMhWYi0b1H
+
+----
+
+Template: work-image
