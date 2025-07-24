@@ -1,0 +1,10 @@
+label: Settings
+icon: folder-structure
+fields:
+  folder: 
+    type: select
+    options:
+      about: about
+      art: art
+      blog: blog
+      tattoos: tattoos

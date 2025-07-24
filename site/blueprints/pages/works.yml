@@ -1,20 +1,28 @@
 title: Works
+icon: file-image
 
+image: 
+  background:
 
-sections:
-  works:
-    type: pages
-    label: Works
-    template: work
-    layout: table
-    limit: 30
-    search: true
-    columns:
-      dimensions: 
-        width: 1/6
-      year: 
-        width: 1/6
-      tags:
-        width: 1/6
-        label: Medium 
+tabs: 
+  content:
+    label: Work
+    icon: file-image
+    sections:
+      works:
+        type: pages
+        label: Works
+        template: work
+        layout: table
+        limit: 30
+        search: true
+        columns:
+          dimensions: 
+            width: 1/6
+          year: 
+            width: 1/6
+          tags:
+            width: 1/6
+            label: Medium 
+  settings: tabs/settings
 
