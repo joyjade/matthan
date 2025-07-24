@@ -1,4 +1,11 @@
 title: Tattoos
+icon: bolt
+
+image:
+  back: black
+  query: false
+# image: page.cover.toFile
+# cover: true
 
 tabs: 
   content:

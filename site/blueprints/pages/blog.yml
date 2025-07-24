@@ -1,7 +1,17 @@
 title: Blog
-icon: 🧺
+icon: page
 
+image:
+  back: black
+  
 columns:
+  right:
+    width: 1/2
+    sections:
+      listed:
+        extends: sections/entries
+        label: Published
+        status: listed
   left:
     width: 1/2
     sections:
@@ -14,11 +24,3 @@ columns:
         extends: sections/entries
         label: In Review
         status: unlisted
-
-  right:
-    width: 1/2
-    sections:
-      listed:
-        extends: sections/entries
-        label: Published
-        status: listed

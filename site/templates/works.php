@@ -2,9 +2,6 @@
 $works = $page->children()->listed()->flip();?>
 <main>
   <ul class="tags">
-    <li>
-      <a href="<?= url('works') ?>">all</a>
-    </li>
     <?php foreach($tags as $tag): ?>
     <li>
       <a href="<?= url('works', ['params' => ['tag' => $tag]]) ?>">
@@ -12,6 +9,9 @@ $works = $page->children()->listed()->flip();?>
       </a>
     </li>
     <?php endforeach ?>
+    <li>
+      <a href="<?= url('works') ?>">all</a>
+    </li>
   </ul>
 
   <section class="works">
@@ -34,7 +34,7 @@ $works = $page->children()->listed()->flip();?>
     <?php endif ?>
 
     <?php if($pagination->hasNextPage()): ?>
-    <a href="<?= $pagination->nextPageUrl() ?>">next posts</a>
+    <a href="<?= $pagination->nextPageUrl() ?>">see more</a>
     <?php endif ?>
   </section>
 </main>

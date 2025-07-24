@@ -10,7 +10,7 @@
           <a href="<?= $work->url() ?>">
             <h1><?= $work->title()->html() ?></h1>
           </a>
-            <p class="stretch"><?= $work->date()->toDate('M Y') ?></p>
+            <p class="stretch date"><?= $work->date()->toDate('M Y') ?></p>
             <p><?= $work->description()->kirbytext() ?></p>
         </div>
         <figure>
