@@ -2,7 +2,7 @@
   --main-font: Univers;
   --second-font: "Univers Condensed";
   --primary-color: #FFF8F3;
-  --secondary-color: #FF0000;
+  --secondary-color: rgb(99, 156, 26);
   --bg-color: #FFFEDB;
   --thin-border: 1px solid black;
   --spacing: 0.75rem 1rem;
@@ -71,13 +71,8 @@ nav li:not(:last-of-type) {
   padding-right: 0.5rem;
 }
 
-nav li:nth-of-type(2){
-  /* flex-grow: 1 */
-}
-
 nav a.active {
   color: var(--secondary-color);
-  text-decoration: underline;
 }
 
 ul.tags {
