@@ -18,14 +18,13 @@
     <div class="title">
       <a href="<?= $site->url() ?>"><?= $site->title()->lower() ?></a>
     </div>
-  </div>
+    <nav>
+      <ul>
+        <?php snippet('nav_el', ['items' => $site->find("info")->children()->listed()]) ?>
+        <?php snippet('nav_el', ['items' => $site->children()->listed()->filterBy('folder', 'art')]) ?>
+        <?php snippet('nav_el', ['items' => $site->children()->filterBy('template', 'blog')]) ?>
+        <?php snippet('nav_el', ['items' => $site->children()->filterBy('template', 'tattoos')]) ?>
+      </ul>
+    </nav>
+</div>
 
-	<nav>
-    <ul>
-    <?php foreach ($site->children()->listed() as $item): ?>
-      <li>
-        <a <?php e($item->isActive(), 'class="active"') ?> href="<?= $item->url() ?>"><?= $item->title()->html()->lower() ?></a>
-    </li>
-    <?php endforeach ?>
-    </ul>
-</nav>

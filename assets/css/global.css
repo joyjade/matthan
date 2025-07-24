@@ -52,12 +52,19 @@ body {
   background-color: var(--bg-color);
 }
 
+.header {
+  display: flex;
+  padding-bottom: 1rem;
+  padding-top: 0.25rem;
+}
+
+.title, nav {
+  width: 50%;
+}
 nav ul {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-bottom: 1rem;
-  padding-top: 0.25rem;
 }
 
 nav li:not(:last-of-type) {
@@ -65,7 +72,7 @@ nav li:not(:last-of-type) {
 }
 
 nav li:nth-of-type(2){
-  flex-grow: 1
+  /* flex-grow: 1 */
 }
 
 nav a.active {
