@@ -35,6 +35,7 @@ tabs:
         sections:
           gallery:
             type: files
+            sortBy: modified desc
             label: Tattoos
             layout: cards
             template: tattoo-image

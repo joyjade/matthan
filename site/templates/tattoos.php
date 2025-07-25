@@ -2,16 +2,17 @@
 <main>
   
   <section>
-    <figure class="cover">
-      <img src="<?=$page->cover()->toFile()->url()?>" alt="">
-    </figure>
-    <h1><?=$page->name() ?></h1>
-    <p>
-      <?=$page->description()?>
-    </p>
-    <button>
-      <a href="<?=$page->booking()->url()?>">Book Now</a>  
-    </button>
+    <div class="sticky">
+      <h1><?=$page->name() ?></h1>
+      
+      <?=$page->description()->kirbytext()?>
+      <!-- <figure class="cover">
+        <img src="<?=$page->cover()->toFile()->url()?>" alt="">
+      </figure> -->
+      <button>
+        <a href="<?=$page->booking()->url()?>">Book Now</a>  
+      </button>
+    </div>
   </section>
   <section class="tattoos">
     <?php foreach($page->files()->filterBy('template','tattoo-image') as $tattoo): ?>

@@ -193,13 +193,25 @@ figcaption {
   width: auto;
   max-width: 100%;
 }
+
 /* TATTOOS */
+
+.sticky {
+  position: sticky;
+  top: 1rem;
+}
+
+.tattoos h1 {
+  padding-bottom: 0.75rem;
+  /* padding-top: 2rem; */
+}
 
 .tattoos main {
   display: flex;
 }
 
 .tattoos section {
+  position: relative;
   width: 50%;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -219,7 +231,7 @@ section.tattoos {
 }
 
 .tattoos p {
-  padding-bottom: 2rem;
+  padding: 0 0 1rem;
 }
 
 section.tattoos figure {
@@ -242,8 +254,23 @@ section.tattoos figure:nth-of-type(4n) {
 }
 
 .tattoos button {
-  border: var(--thin-border);
-  padding: 1rem 1.75rem;
+  border: none;
+  padding: 0.75rem 1.75rem;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  font-weight: 500;
+  font-family: var(--main-font);
+}
+
+.tattoos button a:hover {
+  text-decoration: none;
+}
+
+.tattoos button:hover {
+  text-decoration: none;
+  color: black;
+  background-color: var(--secondary-color);
 }
 
 /* BLOG */
