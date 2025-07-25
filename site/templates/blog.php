@@ -1,24 +1,42 @@
 <?php snippet('nav') ?>
 
-<h1><?= $page->title()->html() ?></h1>
-<?= $page->text()->kirbytext() ?>
-
-<ul class="tags">
-  <?php foreach($tags as $tag): ?>
-  <li>
-    <a href="<?= url('blog', ['params' => ['tag' => $tag]]) ?>">
-      <?= html($tag) ?>
-    </a>
-  </li>
+<div class="subnav">
+  <ul class="tags">
+    <?php foreach($tags as $tag): ?>
+      <li>
+        <a href="<?= url('notes', ['params' => ['tag' => $tag]]) ?>">
+          <?= html($tag) ?>
+        </a>
+      </li>
+    <?php endforeach ?>
+    <li><a href="<?=url('notes')?>">all</a></li>
+  </ul>
+</div>
+ 
+<section>
+  <?php foreach($entries as $entry): ?>
+    <article>
+      <?php if($entry->cover()->isNotEmpty()): ?>
+        <figure>
+          <img src="<?= $entry->cover()->toFile()->url() ?>" alt="">
+        </figure>
+      <?php else: ?>
+        <figure>
+          <img src="<?= $entry->files() ?>" alt="">
+        </figure>
+      <?php endif ?>
+      <h1><a href="<?= $entry->url() ?>"><?= $entry->title()->html() ?></a></h1>
+      <span><?=$entry->date()->toDate(('d M y')) ?></span>
+      <ul>
+        <?php foreach($entry->tags() as $tag): ?>
+          <li>
+           <?= $tag ?>
+          </li>
+        <?php endforeach ?>
+      </ul>
+    </article>
   <?php endforeach ?>
-</ul>
-
-<?php foreach($entries as $entry): ?>
-<article>
-  <h1><a href="<?= $entry->url() ?>"><?= $entry->title()->html() ?></a></h1>
-  <p><?= $entry->text()->excerpt(300) ?></p>
-</article>
-<?php endforeach ?>
+</section>
 
 <section class="pagination">
   <?php if($pagination->hasPrevPage()): ?>

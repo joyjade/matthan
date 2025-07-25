@@ -86,10 +86,14 @@ nav a.active {
   color: var(--secondary-color);
 }
 
-ul.tags {
-  padding-bottom: 1rem;
+.subnav {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+ul.tags {
+  display: flex;
   /* flex-flow: column;
   width: 165px;
   float: left; */
@@ -240,4 +244,36 @@ section.tattoos figure:nth-of-type(4n) {
 .tattoos button {
   border: var(--thin-border);
   padding: 1rem 1.75rem;
+}
+
+/* BLOG */
+
+.blog article {
+  width: 20%;
+  padding-right: 0.75rem;
+}
+.blog article:nth-of-type(5n) {
+  padding-right: 0;
+}
+
+.blog section {
+  padding-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.entry article {
+  padding-top: 2rem;
+  width: 600px;
+  margin: 0 auto;
+  line-height: 1.5;
+  padding-bottom: 4rem;
+}
+
+.entry article .heading {
+  margin-bottom: 1rem;
+}
+
+.entry article figure {
+  padding: 2rem 0;
 }

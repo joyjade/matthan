@@ -1,7 +1,9 @@
 <?php snippet('nav') ?>
 
 <main>
-  <a href="<?= $page->parent()->url() ?>">back to all exhibitions</a>
+  <div class="subnav">
+    <a href="<?= $page->parent()->url() ?>">back to all exhibitions</a>
+  </div>
   
   <h1><?= $page->title() ?></h1>
   <p class="date"><?= $page->date()->toDate('M Y') ?></p>

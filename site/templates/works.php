@@ -1,18 +1,20 @@
 <?php snippet('nav');
 $works = $page->children()->listed()->flip();?>
 <main>
-  <ul class="tags">
-    <?php foreach($tags as $tag): ?>
-    <li>
-      <a href="<?= url('works', ['params' => ['tag' => $tag]]) ?>">
-        <?= html($tag) ?>
-      </a>
-    </li>
-    <?php endforeach ?>
-    <li>
-      <a href="<?= url('works') ?>">all</a>
-    </li>
-  </ul>
+  <div class="subnav">
+    <ul class="tags">
+      <?php foreach($tags as $tag): ?>
+      <li>
+        <a href="<?= url('works', ['params' => ['tag' => $tag]]) ?>">
+          <?= html($tag) ?>
+        </a>
+      </li>
+      <?php endforeach ?>
+      <li>
+        <a href="<?= url('works') ?>">all</a>
+      </li>
+    </ul>
+  </div>
 
   <section class="works">
     <?php foreach($entries as $work): ?>

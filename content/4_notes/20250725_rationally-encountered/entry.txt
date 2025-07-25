@@ -1,0 +1,31 @@
+Title: rationally encountered
+
+----
+
+Article: [{"content":{"text":"<p>\"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?\"</p>"},"id":"4ad67257-7144-4e27-b786-66ba0d53df1b","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file://7Gpkli4FlBQ1IaDq"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"815c0778-5944-43b6-ba7f-769b2577c1fb","isHidden":false,"type":"image"},{"content":{"text":"<p>I've been wondering about when small things come true, like a small fly that lays an egg and I say, father, protect us and guide us. </p><p>Hailing again, why does it matter when it's my future to die in the backroom. </p>"},"id":"5701e7ce-5c19-4a8c-b628-0c4a11203e6d","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file://O0EKZxqjONPdZxKm"],"src":"","alt":"black sun against whie ","caption":"","link":"","ratio":"","crop":"false"},"id":"fde01d67-e917-4bef-93c8-9c949e0dc5a4","isHidden":false,"type":"image"}]
+
+----
+
+Cover: 
+
+----
+
+Date: 2025-07-25
+
+----
+
+Tags: biking
+
+----
+
+Text:
+
+"But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?"
+
+(image: sandiasketch.jpeg)
+
+I have not long
+
+----
+
+Uuid: 1IIYiN1zuzWyzQnG

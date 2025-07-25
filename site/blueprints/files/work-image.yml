@@ -10,7 +10,7 @@ fields:
   caption:
     label: Caption
     type: textarea
-    size: medium
+    size: small
     width: 1/2
   alt:
     label: Alt Text

@@ -1,7 +1,9 @@
 <?php snippet('nav') ?>
 
 <main>
-  <a href="<?= $page->parent()->url() ?>">back to all works</a>
+  <div class="subnav">
+    <a href="<?= $page->parent()->url() ?>">back to all works</a>
+  </div>
   
   <h1><?= $page->title()->html() ?></h1>
   <p><?= $page->materials() ?></p>
