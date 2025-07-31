@@ -4,7 +4,8 @@ accept:
   mime: image/*
 
 image:
-  cover: true
+  back: white
+#   cover: true
 
 fields:
   caption:
