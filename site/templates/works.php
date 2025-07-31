@@ -22,7 +22,7 @@ $works = $page->children()->listed()->flip();?>
       <?php $cover = $work->cover()->toFile() ? $work->cover()->toFile() : $work->images()->first() ?>
 
       <div class="item">
-        <a href="<?= $cover->url() ?>">
+        <a href="<?= $work->url() ?>">
           
           <figure>
             <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>">

@@ -21,20 +21,11 @@
   <section>
     <?php foreach($page->images()->sorted() as $image): ?>
       <div>
-        <figure>
-          <a href="<?= $image->url() ?>" attr="data-lightbox">
-            <img src="<?= $image->url() ?>" alt="">
-          </a>
-          <?php if($image->caption()->isNotEmpty()) : ?>
-            <figcaption>
-              <?=$image->caption()?>
-            </figcaption>
-          <?php endif ?>
-        </figure>
+        <?php snippet('lightbox-img', ['image' => $image]) ?>
       </div>
     <?php endforeach ?>
   </section>
 
   </main>
-
+<?php snippet ('lightbox') ?>
 <?php snippet('footer') ?>

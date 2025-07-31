@@ -176,6 +176,7 @@ p.stretch {
 .exhibition figcaption {
   position: relative;
   margin-top: 0.25rem;
+  font-size: 14px;
 }
 
 .exhibition .heading .date {
