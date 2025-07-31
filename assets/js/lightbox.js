@@ -27,6 +27,11 @@ function showLightbox(index) {
   lightbox.style.display = 'flex';
   document.body.style.overflow = 'hidden';
 
+  // 👇 Only show arrows if more than 1 image
+  const showArrows = images.length > 1;
+  prevBtn.style.display = showArrows ? 'block' : 'none';
+  nextBtn.style.display = showArrows ? 'block' : 'none';
+
   requestAnimationFrame(() => {
     lightboxImg.classList.add('in');
   });

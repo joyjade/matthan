@@ -103,6 +103,10 @@ ul.tags {
   padding-left: 2rem;
 }
 
+.navigation {
+  justify-content: space-between;
+}
+
 /* HOME */
 
 .home main section {
@@ -191,6 +195,10 @@ p.stretch {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.work .heading .row:last-of-type {
+  align-items: flex-start;
 }
 
 /* WORKS */

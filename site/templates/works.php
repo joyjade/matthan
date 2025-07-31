@@ -35,11 +35,19 @@ $works = $page->children()->listed()->flip();?>
 
   <section class="pagination">
     <?php if($pagination->hasPrevPage()): ?>
-    <a href="<?= $pagination->prevPageUrl() ?>">previous posts</a>
+    <a href="<?= $pagination->prevPageUrl() ?>">
+      <span class="nav left">
+        <?= asset('assets/icons/arrow-lines.svg')->read()?>
+      </span>
+    </a>
     <?php endif ?>
 
     <?php if($pagination->hasNextPage()): ?>
-    <a href="<?= $pagination->nextPageUrl() ?>">see more</a>
+    <a href="<?= $pagination->nextPageUrl() ?>">
+      <span class="nav right">
+        <?= asset('assets/icons/arrow-lines.svg')->read()?>
+      </span>
+    </a>
     <?php endif ?>
   </section>
 </main>

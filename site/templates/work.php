@@ -25,6 +25,26 @@
     <?php endforeach ?>
   </section>
 
+  <section class="navigation">
+
+    <?php 
+      if($page->hasPrevListed()): ?>
+      <a href="<?= $page->prevListed()->url() ?>">
+        <span class="nav left">
+          <?= asset('assets/icons/arrow-lines.svg')->read()?>
+        </span>
+      </a>
+    <?php endif ?>
+
+    <?php if($page->hasNextListed()): ?>
+      <a href="<?= $page->nextListed()->url() ?>">
+        <span class="nav right">
+          <?= asset('assets/icons/arrow-lines.svg')->read()?>
+        </span>
+      </a>
+    <?php endif ?>
+  </section>
+
   </main>
 <?php snippet ('lightbox') ?>
 <?php snippet('footer') ?>

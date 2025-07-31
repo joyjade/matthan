@@ -29,7 +29,7 @@ columns:
       cover:
         type: files
         multiple: false
-        help: 'Image shown on work grid'
+        help: 'Image shown on work grid. Fallback is first image.'
       materials:
         type: textarea
         buttons: 
@@ -53,5 +53,7 @@ columns:
         options:
           - painting
           - sculpture
+          - furniture
+          - installation
 
   
