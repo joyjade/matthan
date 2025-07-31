@@ -1,6 +1,7 @@
 <?php snippet('nav');
 $works = $page->children()->listed()->flip();?>
 <main>
+
   <div class="subnav">
     <ul class="tags">
       <?php foreach($tags as $tag): ?>
@@ -18,13 +19,15 @@ $works = $page->children()->listed()->flip();?>
 
   <section class="works">
     <?php foreach($entries as $work): ?>
+      <?php $cover = $work->cover()->toFile() ? $work->cover()->toFile() : $work->images()->first() ?>
+
       <div class="item">
-        <a href="<?= $work->url() ?>">
+        <a href="<?= $cover->url() ?>">
           
           <figure>
-            <img src="<?= $work->image()->url() ?>" alt="">
+            <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>">
           </figure>
-          <!-- <h1><?= $work->title()->html() ?></h1> -->
+
         </a>
       </div>
     <?php endforeach ?>

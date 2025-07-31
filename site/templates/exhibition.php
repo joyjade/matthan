@@ -5,22 +5,32 @@
     <a href="<?= $page->parent()->url() ?>">back to all exhibitions</a>
   </div>
   
-  <h1><?= $page->title() ?></h1>
-  <p class="date"><?= $page->date()->toDate('M Y') ?></p>
-  <p><?= $page->description()->kirbytext() ?></p>
+  <div class="heading">
+    <div class="row">
+      <h1><?= $page->title() ?></h1>
+      <p class="date"><?= $page->date()->toDate('M Y') ?></p>
+    </div>
+    <div class="row">
+      <div>
+        <?= $page->description()->kirbytext() ?>
+      </div>
+    </div>
+  </div>
   
   
   <section>
     <?php foreach($page->images()->sorted() as $image): ?>
       <div>
         <figure>
-          <a href="<?= $image->url() ?>">
+          <a href="<?= $image->url() ?>" attr="data-lightbox">
             <img src="<?= $image->url() ?>" alt="">
           </a>
+          <?php if($image->caption()->isNotEmpty()) : ?>
+            <figcaption>
+              <?=$image->caption()?>
+            </figcaption>
+          <?php endif ?>
         </figure>
-        <figcaption>
-          <?=$image->caption()?>
-        </figcaption>
       </div>
     <?php endforeach ?>
   </section>

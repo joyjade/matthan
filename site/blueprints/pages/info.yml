@@ -1,0 +1,23 @@
+title: Info
+
+columns: 
+  - width: 1/3
+    fields:
+      profile:
+        type: files
+        multiple: false
+        layout: cards
+        size: huge
+
+
+  - width: 2/3
+    fields:
+      email:
+        type: email
+      tel:
+        type: tel
+      social:
+        label: Instagram
+        type: url
+      
+

@@ -26,6 +26,10 @@ columns:
   left:
     width:  1/3
     fields:
+      cover:
+        type: files
+        multiple: false
+        help: 'Image shown on work grid'
       materials:
         type: textarea
         buttons: 

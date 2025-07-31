@@ -16,6 +16,7 @@
 <section>
   <?php foreach($entries as $entry): ?>
     <article>
+      <a href="<?= $entry->url() ?>">
       <?php if($entry->cover()->isNotEmpty()): ?>
         <figure>
           <img src="<?= $entry->cover()->toFile()->url() ?>" alt="">
@@ -25,7 +26,8 @@
           <img src="<?= $entry->files() ?>" alt="">
         </figure>
       <?php endif ?>
-      <h1><a href="<?= $entry->url() ?>"><?= $entry->title()->html() ?></a></h1>
+      <h1><?= $entry->title()->html() ?></h1>
+      </a>
       <span><?=$entry->date()->toDate(('d M y')) ?></span>
       <ul>
         <?php foreach($entry->tags() as $tag): ?>

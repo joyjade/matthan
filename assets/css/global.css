@@ -99,7 +99,7 @@ ul.tags {
   float: left; */
 }
 
-.tags li {
+.subnav .tags li {
   padding-left: 2rem;
 }
 
@@ -136,7 +136,6 @@ main {
 }
 
 .row figure {
-  width: 30%;
   max-width: 350px;
 }
 
@@ -151,6 +150,47 @@ p.stretch {
   flex-grow: 1;
 }
 
+.exhibition section {
+  /* display: flex;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.exhibition section > div {
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+}
+
+/* 
+.exhibition figure, .exhibition img, .exhibition figcaption {
+  max-width: 600px;
+  width: auto;
+  height: auto;
+}
+
+.exhibition img {
+  max-height: 600px;
+} */
+
+.exhibition figcaption {
+  position: relative;
+  margin-top: 0.25rem;
+}
+
+.exhibition .heading .date {
+  margin-bottom: 0.25rem;
+}
+
+.work .heading, .exhibition .heading {
+  margin-bottom: 1rem;
+}
+
+.work .heading .row,  .exhibition .heading .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 /* WORKS */
 
@@ -160,8 +200,8 @@ section.works {
   grid-gap: 0.75rem;
 }
 
-.work section, .exhibition section, .work h1, .exhibition h1 {
-  padding-top: 2rem;
+.work section, .exhibition section, .work .heading, .exhibition .heading {
+  padding-top: 2rem; 
 }
 
 .work section > div {
@@ -180,18 +220,9 @@ section.works {
   flex-wrap: wrap;
 }
 
-.date {
-  margin-bottom: 1rem;
-}
-
 figcaption {
   font-size: 1rem;
   padding-bottom: 0.25rem;
-}
-
-.exhibition figure, .exhibition img {
-  width: auto;
-  max-width: 100%;
 }
 
 /* TATTOOS */
@@ -277,7 +308,7 @@ section.tattoos figure:nth-of-type(4n) {
 
 .blog article {
   width: 20%;
-  padding-right: 0.75rem;
+  padding-right: 1rem;
 }
 .blog article:nth-of-type(5n) {
   padding-right: 0;
@@ -303,4 +334,21 @@ section.tattoos figure:nth-of-type(4n) {
 
 .entry article figure {
   padding: 2rem 0;
+}
+
+.cv main {
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.cv strong {
+  font-family: var(--second-font);
+  padding-top: 1.3rem;
+  display: inline-block;
+  font-size: 1.1rem;
+}
+
+.info .profile {
+  width: 300px;
+  margin-top: 2rem;
 }

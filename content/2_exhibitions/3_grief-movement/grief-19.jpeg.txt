@@ -1,0 +1,17 @@
+Caption: (studio view)
+
+----
+
+Alt: 
+
+----
+
+Sort: 22
+
+----
+
+Uuid: k7UfoGpwCJM8j8Kv
+
+----
+
+Template: work-image

@@ -5,10 +5,16 @@
     <a href="<?= $page->parent()->url() ?>">back to all works</a>
   </div>
   
-  <h1><?= $page->title()->html() ?></h1>
-  <p><?= $page->materials() ?></p>
-  <p><?= $page->dimensions() ?></p>
-  <p><?= $page->year() ?></p>
+  <div class="heading">
+    <div class="row">
+      <h1><?= $page->title()->html() ?></h1>
+      <p><?= $page->year() ?></p>
+    </div>
+    <div class="row">
+      <p><?= $page->materials() ?></p>
+      <p><?= $page->dimensions() ?></p>
+    </div>
+  </div>
   
   
   <section>
@@ -18,10 +24,12 @@
           <a href="<?= $image->url() ?>">
             <img src="<?= $image->url() ?>" alt="">
           </a>
+          <?php if($image->caption()->isNotEmpty()) : ?>
+          <figcaption>
+            <?=$image->caption()?>
+          </figcaption>
+        <?php endif ?>
         </figure>
-        <figcaption>
-          <?=$image->caption()?>
-        </figcaption>
       </div>
     <?php endforeach ?>
   </section>

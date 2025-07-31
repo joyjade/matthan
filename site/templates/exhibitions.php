@@ -1,5 +1,5 @@
 <?php snippet('nav');
-  $works = $page->children()->listed()->flip();
+  $works = $page->children()->listed();
 ?>
 
 <main>
@@ -13,9 +13,10 @@
             <p class="stretch date"><?= $work->date()->toDate('M Y') ?></p>
             <p><?= $work->description()->kirbytext() ?></p>
         </div>
+        <?php $cover = $work->cover()->toFile() ? $work->cover()->toFile() : $work->images()->first() ?>
         <figure>
           <a href="<?= $work->url() ?>">
-            <img src="<?= $work->image()->url() ?>" alt="">
+            <img src="<?= $cover->url() ?>" alt="">
           </a>
         </figure>
     </div>
