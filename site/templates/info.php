@@ -5,7 +5,7 @@
         <img src="<?= $profile->url() ?>" alt="<?=$profile->alt()?>">
       <?php endif ?>
     </div>
-    <div>
+    <div class="content">
       <p>
         <p><?= $page->tel() ?></p>
         <p><a href="mailto:<?= $page->email() ?>"><?= $page->email() ?></a></p>

@@ -126,21 +126,26 @@ ul.tags {
 
 /* HOME */
 
-.home main section {
-  width: 100%;
+.home main section, .info main {
+  width: auto;
+  height: calc(100vh - 65px);
   /* height: 400px; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: flex-end;
+}
+
+.home main section img {
+  max-width: 600px;
 }
 
 .home main {
-  display: flex;
   grid-gap: 0.75rem;
-  align-items: flex-end;
-  height: 88vh;
 }
 
-main {
+/* main {
   padding-bottom: 2rem;
-}
+} */
 
 /* EXHIBITION */
 
@@ -426,6 +431,7 @@ section.tattoos figure:nth-of-type(4n) {
 
 .cv main {
   margin-top: 2rem;
+  margin-bottom: 2rem;
   line-height: 1.6;
 }
 
@@ -437,6 +443,14 @@ section.tattoos figure:nth-of-type(4n) {
 }
 
 .info .profile {
-  width: 300px;
+  width: auto;
   margin-top: 2rem;
+}
+
+.info .profile {
+  margin-right: 1rem;
+}
+
+.info .content {
+  margin-bottom: 0.75rem;
 }

@@ -5,10 +5,10 @@
       <img src="<?= $page->art()->toFile()->url() ?>" alt="">
     </a>
   </section>
-  <section>
+  <!-- <section>
     <a href="<?=$page->tattoolink()->toPage()->url()?>">
       <img src="<?= $page->tattoo()->toFile()->url() ?>" alt="">
     </a>
-  </section>
+  </section> -->
 </main>
 <?php snippet('footer') ?>
