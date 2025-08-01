@@ -1,0 +1,17 @@
+Caption: (installation view)
+
+----
+
+Alt: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: Pc8r6eiMu66lzBTr
+
+----
+
+Template: work-image

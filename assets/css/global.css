@@ -180,7 +180,7 @@ p.stretch {
   /* display: flex;
   flex-wrap: wrap; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .exhibition section > div {
@@ -424,8 +424,6 @@ section.tattoos figure:nth-of-type(4n) {
 .entry video {
   width: 100%;
 }
-
-
 
 /* other */
 
