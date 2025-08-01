@@ -24,8 +24,10 @@ tabs:
                 type: files
               description:
                 type: textarea
+              instagram:
+                type: url
               booking:
-                type: link
+                type: url
                 label: Calendly link
           pages:
             type: pages

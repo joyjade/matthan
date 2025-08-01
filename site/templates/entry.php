@@ -1,6 +1,6 @@
 <?php snippet('nav');?>
 
-<section>
+<section class="<?= $page->format()?>">
   <div class="subnav">
     <a href="<?= $page->parent()->url() ?>">back to all notes</a>
   </div>
@@ -13,9 +13,10 @@
     <?= $page->article()->toBlocks() ?>
 
     <ul class="tags">
-      <?php foreach($page->tags() as $tag): ?>
+      <?php $tags = $page->tags()->split(); 
+        foreach($tags as $tag): ?>
         <li><a href="<?=url('notes', ['params' => ['tag' => $tag]])?>"><?= $tag ?></a></li>
-        <?php endforeach ?>
+      <?php endforeach ?>
     </ul>
 
 

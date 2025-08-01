@@ -1,0 +1,25 @@
+Title: last resort is not a resort
+
+----
+
+Article: [{"content":{"images":["file://ltD5EldzIS8XE892","file://NzQPnk8OJB3kfL2p","file://dW8McLe6os2kE9kI","file://aVNaz2QrX95Qax3y"],"caption":"","ratio":"","crop":"false"},"id":"989c7c29-e1ec-4469-afc4-cede8d3bd815","isHidden":false,"type":"gallery"},{"content":{"text":"<p>recent tattoos remind me of circling a drain that leads up the stairs and now i've gotten some more perspective...</p>"},"id":"791853c2-a31c-409e-a3a0-970171041af8","isHidden":false,"type":"text"}]
+
+----
+
+Cover: - file://aVNaz2QrX95Qax3y
+
+----
+
+Date: 2025-07-31
+
+----
+
+Tags: tattoos
+
+----
+
+Format: narrow
+
+----
+
+Uuid: jsFamaEoPbYFtwuh

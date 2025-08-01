@@ -1,21 +1,25 @@
-<?php snippet('nav');
-$works = $page->children()->listed()->flip();?>
+<?php snippet('nav');?>
 <main>
 
+
   <div class="subnav">
+    <ul class="filter">
+        <?php foreach($years as $year): ?>
+          <li>
+            <a 
+              <?php e($year->toString() === param('year'), 'class="active"') ?> 
+              href="<?= url('works', ['params' => ['year' => $year]]) ?>">
+              <?= $year ?>    
+            </a>
+          </li>
+        <?php endforeach ?>
+      </ul>
     <ul class="tags">
-      <?php foreach($tags as $tag): ?>
-      <li>
-        <a href="<?= url('works', ['params' => ['tag' => $tag]]) ?>">
-          <?= html($tag) ?>
-        </a>
-      </li>
-      <?php endforeach ?>
-      <li>
-        <a href="<?= url('works') ?>">all</a>
-      </li>
+      <?php snippet('tags', ['tags' => $tags, 'section' => 'works']) ?>
     </ul>
   </div>
+
+  
 
   <section class="works">
     <?php foreach($entries as $work): ?>
@@ -32,23 +36,26 @@ $works = $page->children()->listed()->flip();?>
       </div>
     <?php endforeach ?>
   </section>
-
-  <section class="pagination">
-    <?php if($pagination->hasPrevPage()): ?>
-    <a href="<?= $pagination->prevPageUrl() ?>">
-      <span class="nav left">
-        <?= asset('assets/icons/arrow-lines.svg')->read()?>
-      </span>
-    </a>
-    <?php endif ?>
-
-    <?php if($pagination->hasNextPage()): ?>
-    <a href="<?= $pagination->nextPageUrl() ?>">
-      <span class="nav right">
-        <?= asset('assets/icons/arrow-lines.svg')->read()?>
-      </span>
-    </a>
-    <?php endif ?>
+  
+  <section class="navigation">
+    <div>
+      <?php if($pagination->hasPrevPage()): ?>
+      <a href="<?= $pagination->prevPageUrl() ?>">
+        <span class="nav left">
+          <?= asset('assets/icons/arrow-lines.svg')->read()?>
+        </span>
+      </a>
+      <?php endif ?>
+    </div>
+    <div>
+      <?php if($pagination->hasNextPage()): ?>
+      <a href="<?= $pagination->nextPageUrl() ?>">
+        <span class="nav right">
+          <?= asset('assets/icons/arrow-lines.svg')->read()?>
+        </span>
+      </a>
+      <?php endif ?>
+    </div>
   </section>
 </main>
 <?php snippet('footer') ?>

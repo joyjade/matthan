@@ -1,0 +1,25 @@
+Title: off an edge
+
+----
+
+Article: [{"content":{"location":"kirby","url":"","video":["file://0RGEORaNejx6KINV"],"poster":[],"caption":"","autoplay":"true","muted":"true","loop":"true","controls":"false","preload":"auto"},"id":"a2ec5e06-d9e8-4717-8232-44c730f1fede","isHidden":false,"type":"video"}]
+
+----
+
+Cover: 
+
+----
+
+Date: 2025-07-31
+
+----
+
+Tags: 
+
+----
+
+Format: wide
+
+----
+
+Uuid: kkKmbAY7HRW5mCuc

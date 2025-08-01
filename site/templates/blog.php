@@ -1,15 +1,10 @@
 <?php snippet('nav') ?>
 
+<!-- <?php dump(params()) ?>-->
+
 <div class="subnav">
   <ul class="tags">
-    <?php foreach($tags as $tag): ?>
-      <li>
-        <a href="<?= url('notes', ['params' => ['tag' => $tag]]) ?>">
-          <?= html($tag) ?>
-        </a>
-      </li>
-    <?php endforeach ?>
-    <li><a href="<?=url('notes')?>">all</a></li>
+    <?php snippet('tags', ['tags' => $tags, 'section' => 'notes']) ?>
   </ul>
 </div>
  
@@ -22,18 +17,18 @@
           <img src="<?= $entry->cover()->toFile()->url() ?>" alt="">
         </figure>
       <?php else: ?>
-        <figure>
-          <img src="<?= $entry->files() ?>" alt="">
-        </figure>
+        <div class="blank">
+
+        </div>
       <?php endif ?>
       <h1><?= $entry->title()->html() ?></h1>
       </a>
       <span><?=$entry->date()->toDate(('d M y')) ?></span>
-      <ul>
-        <?php foreach($entry->tags() as $tag): ?>
-          <li>
-           <?= $tag ?>
-          </li>
+      <ul class="tags">
+
+        <?php $tags = $entry->tags()->split(); 
+          foreach($tags as $tag): ?>
+            <li><a href="<?=url('notes', ['params' => ['tag' => $tag]])?>"><?= $tag ?></a></li>
         <?php endforeach ?>
       </ul>
     </article>

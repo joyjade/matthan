@@ -2,7 +2,7 @@ Title: for an auspicious easter 
 
 ----
 
-Text: painting~
+Article: [{"content":{"text":"<p>This can be anything you want it. I think it should be a place that you try and post writing. </p>"},"id":"b61752d1-83a0-4740-b74c-9323e392f20a","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":["file://B5ahoDV9IxedIVCX"],"src":"","alt":"black ink tattoo of star on bare shoulder","caption":"","link":"","ratio":"","crop":"false"},"id":"056df81f-a9e3-4c7e-9f28-5ceed2695fc6","isHidden":false,"type":"image"},{"content":{"level":"h2","text":"sugar for the shore"},"id":"6da972f5-8c64-4bb9-a1a1-d58fa982b237","isHidden":false,"type":"heading"},{"content":{"text":"<ul><li>like i said</li><li>again and again</li><li>true tho it may be </li></ul>"},"id":"a1fa1e49-b541-4768-9c2a-42d25cff796d","isHidden":false,"type":"list"}]
 
 ----
 
@@ -14,7 +14,11 @@ Date: 2025-07-09
 
 ----
 
-Tags: art
+Tags: art, tattoos
+
+----
+
+Text: painting~
 
 ----
 

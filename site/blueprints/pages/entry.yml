@@ -1,6 +1,5 @@
 title: Entry
 num: '{{ page.date.toDate("Ymd") }}'
-icon: 🪃
 
 status:
   draft:
@@ -61,4 +60,16 @@ columns:
             default: today
           tags:
             type: tags
+            # options:
+            #   type: query
+              
+
+
+          format:
+            type: select
+            label: Wide or Narrow
+            default: narrow 
+            options: 
+              wide: wide
+              narrow: narrow
  

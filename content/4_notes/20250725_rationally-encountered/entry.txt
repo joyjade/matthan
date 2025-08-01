@@ -6,7 +6,7 @@ Article: [{"content":{"text":"<p>\"But I must explain to you how all this mistak
 
 ----
 
-Cover: 
+Cover: - file://O0EKZxqjONPdZxKm
 
 ----
 

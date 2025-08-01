@@ -7,16 +7,21 @@ $entries = $page->children()->listed();
 
 // fetch all tags
 $tags = $entries->pluck('tags', ',', true);
+$years = $entries->sortBy('year', 'desc')->pluck('year', null, true);
 
 // add the tag filter
 if($tag = param('tag')) {
   $entries = $entries->filterBy('tags', $tag, ',');
+} 
+
+if ($year = param('year')) {
+  $entries = $entries->filterBy('year', $year, ',');
 }
 
 // apply pagination
 $entries   = $entries->paginate(20);
 $pagination = $entries->pagination();
 
-return compact('entries', 'tags', 'tag', 'pagination');
+return compact('entries', 'tags', 'tag', 'pagination', 'years', 'year');
 
 };
