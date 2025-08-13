@@ -2,6 +2,9 @@ title: Exhibitions
 type: pages
 icon: map
 
+navigation:
+  status: all
+
 image:
   back: black
 # options:

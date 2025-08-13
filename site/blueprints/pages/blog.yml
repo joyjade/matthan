@@ -3,6 +3,9 @@ icon: page
 
 image:
   back: black
+
+navigation:
+  status: all
   
 columns:
   right:

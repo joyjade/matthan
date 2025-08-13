@@ -1,0 +1,25 @@
+Title: barbed window decor
+
+----
+
+Article: [{"content":{"location":"kirby","image":["file://z9xvbtLrHX9O2rr4"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"c762a7a2-3408-49ef-9a1a-9723a178d724","isHidden":false,"type":"image"},{"content":{"text":"<p>This is the text</p>"},"id":"103a7475-74f0-498c-bcd8-c129bd48b8c8","isHidden":false,"type":"text"},{"content":{"location":"kirby","image":[],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"b22578b0-82ea-4d73-b4c3-1d65da1965f4","isHidden":false,"type":"image"},{"content":{"location":"kirby","image":["file://rT6ND46ATwdsUp7H"],"src":"","alt":"","caption":"","link":"","ratio":"","crop":"false"},"id":"4824fe95-98bc-4419-a04c-264c764e0288","isHidden":false,"type":"image"}]
+
+----
+
+Cover: 
+
+----
+
+Date: 2025-07-31
+
+----
+
+Tags: 
+
+----
+
+Format: narrow
+
+----
+
+Uuid: g90AnhlNQW4MI88u

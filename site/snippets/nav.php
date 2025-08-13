@@ -20,10 +20,15 @@
     </div>
     <nav>
       <ul>
-        <?php snippet('nav_el', ['items' => $site->find("info")->children()->listed()]) ?>
-        <?php snippet('nav_el', ['items' => $site->children()->listed()->filterBy('folder', 'art')]) ?>
-        <?php snippet('nav_el', ['items' => $site->children()->filterBy('template', 'blog')]) ?>
-        <?php snippet('nav_el', ['items' => $site->children()->filterBy('template', 'tattoos')]) ?>
+        <?php 
+          snippet('nav_el', ['items' => $site->find("info")->children()->listed()]); 
+          snippet('nav_el', ['items' => $site->children()->listed()->filterBy('folder', 'art')]);
+  
+          if ($site->find('notes')->isListed()):
+            snippet('nav_el', ['items' => $site->children()->listed()->filterBy('template', 'blog')]);
+          endif;
+        
+          snippet('nav_el', ['items' => $site->children()->listed()->filterBy('template', 'tattoos')]); ?>
       </ul>
     </nav>
 </div>

@@ -5,6 +5,9 @@ title: Exhibition
 #   status: false
 #   delete: false
 
+navigation:
+  status: all
+  
 columns:
   - width: 1/2
     sections:

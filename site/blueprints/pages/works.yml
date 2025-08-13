@@ -1,6 +1,9 @@
 title: Works
 icon: file-image
 
+navigation:
+  status: all
+  
 image:
   back: black
 
