@@ -28,9 +28,7 @@
       <div class="item">
         <a href="<?= $work->url() ?>">
           
-          <figure>
-            <img src="<?= $cover->url() ?>" alt="<?= $cover->alt() ?>">
-          </figure>
+          <?php snippet('img', ['photo' => $cover]) ?>
 
         </a>
       </div>

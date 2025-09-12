@@ -1,5 +1,4 @@
-<figure class="thumbnail">
-  <!-- <img src="<?= $photo->url() ?>" alt="<?= $photo->alt() ?>"> -->
+<figure>
   <img
       loading="lazy"
       alt="<?= $photo->alt() ?>"
@@ -9,9 +8,4 @@
       height="<?= $photo->resize(1800)->height() ?>"
       aria-describedby="materials"
   >
-  <?php if($photo->caption()->isNotEmpty()) : ?>
-    <figcaption>
-      <?=$photo->caption()->kirbytext()?>
-    </figcaption>
-  <?php endif ?>
 </figure>

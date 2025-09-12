@@ -20,7 +20,7 @@
   <section>
     <?php foreach($page->images()->sorted() as $image): ?>
       <div>
-        <?php snippet('lightbox-img', ['image' => $image]) ?>
+        <?php snippet('lightbox-img', ['photo' => $image]) ?>
       </div>
     <?php endforeach ?>
   </section>

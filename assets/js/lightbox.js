@@ -6,17 +6,22 @@ const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 
 const figures = document.querySelectorAll('.thumbnail');
+
+
 let currentIndex = 0;
 
 // Collect image + caption data
 const images = Array.from(figures).map(fig => {
   const img = fig.querySelector('img');
   const caption = fig.querySelector('figcaption');
+  console.log(img);
   return {
-    src: img.src,
+    src: img.srcset.split(',').pop().trim().split(' ')[0],
     caption: caption ? caption.textContent : ''
   };
 });
+
+console.log(images);
 
 function showLightbox(index) {
   currentIndex = index;
