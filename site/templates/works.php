@@ -3,17 +3,23 @@
 
 
   <div class="subnav">
-    <ul class="filter">
-        <?php foreach($years as $year): ?>
-          <li>
-            <a 
-              <?php e($year->toString() === param('year'), 'class="active"') ?> 
-              href="<?= url('works', ['params' => ['year' => $year]]) ?>">
-              <?= $year ?>    
-            </a>
-          </li>
-        <?php endforeach ?>
-      </ul>
+    <div class="filter-container">
+      <div class="select">
+        year <span class="arrow"> > </span>
+        <?= param('year') ?>
+      </div>
+      <ul class="filter">
+          <?php foreach($years as $year): ?>
+            <li>
+              <a 
+                <?php e($year->toString() === param('year'), 'class="active"') ?> 
+                href="<?= url('works', ['params' => ['year' => $year]]) ?>">
+                <?= $year ?>    
+              </a>
+            </li>
+          <?php endforeach ?>
+        </ul>
+    </div>
     <ul class="tags">
       <?php snippet('tags', ['tags' => $tags, 'section' => 'works']) ?>
     </ul>

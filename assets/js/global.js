@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() { 
   mobileNav();
+
+  dropdown();
 });
 
 
@@ -23,4 +25,19 @@ function mobileNav() {
     }
   });
 
+}
+
+function dropdown(){
+  let select = document.querySelector('.select');
+  let container = document.querySelector('.filter-container');
+
+  document.addEventListener('click', function(event) {
+    if (event.target !== container && !container.contains(event.target)) {
+      console.log('outside element');
+      container.classList.remove('show');
+    } else {
+      console.log('filter clicked');
+      container.classList.toggle('show');
+    } 
+  })
 }

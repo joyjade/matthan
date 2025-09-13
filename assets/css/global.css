@@ -1,11 +1,13 @@
 :root {
   --main-font: Univers;
-  --second-font: "Univers Condensed";
+  /* --second-font: "Univers Condensed"; */
   --primary-color: #FFF8F3;
   --secondary-color: rgb(99, 156, 26);
   --bg-color: #FFFEDB;
   --thin-border: 1px solid black;
   --spacing: 0.75rem 1rem;
+
+  --blur: 0 0 5px 5px var(--bg-color);
  }
 
 
@@ -41,10 +43,10 @@ figure, img {
   height: auto;
 }
 
+
 /* STYLES */
 
 h1 {
-  font-family: var(--second-font);
   font-weight: 800;
   font-size: 1.5rem;
   margin-bottom: 0.2rem;
@@ -106,12 +108,35 @@ nav a:hover, a.active, .tags a:hover, .title a:hover, .filter a:hover {
 }
 
 ul.filter {
-  display: flex;
+  display: none;
 }
 
-ul.filter li {
-  margin-right: 1rem;
+.filter-container.show ul.filter {
+  display: flex;
+  position: absolute;
+  
+  flex-flow: column;
+  padding: 5px 10px;
+  padding-left: 0;
 }
+
+
+
+ul.filter li {
+  margin-left: -5px; 
+  padding: 5px 10px;
+  background-color: var(--bg-color);
+  box-shadow: var(--blur);
+  border-radius: 25px;
+
+}
+
+.show span.arrow {
+  transform: rotate(90deg);
+  display: inline-block;
+  padding-left: 3px;
+}
+
 ul.tags {
   display: flex;
   /* flex-flow: column;
@@ -429,10 +454,9 @@ section.tattoos figure:nth-of-type(4n) {
 }
 
 .cv strong {
-  font-family: var(--second-font);
+  font-weight: 800;
   padding-top: 1.3rem;
   display: inline-block;
-  font-size: 1.1rem;
 }
 
 .info .profile {
