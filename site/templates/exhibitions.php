@@ -14,7 +14,7 @@
             <p><?= $work->description()->kirbytext() ?></p>
         </div>
         <?php $cover = $work->cover()->toFile() ? $work->cover()->toFile() : $work->images()->first() ?>
-        <a href="<?= $work->url() ?>">
+        <a href="<?= $work->url() ?>" class="img">
           <?php snippet('img', ['photo' => $cover]) ?>
         </a>
     </div>

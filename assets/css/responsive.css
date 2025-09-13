@@ -1,24 +1,3 @@
-/* MOBILE */
-@media screen and (max-width: 768px) {  
-  .hamb {
-    display: inline-block;
-  }
-  .m-nav {
-    display: none;
-  }
-
-  .m-nav li {
-    text-align: end;
-  }
-}
-
-.m-nav.show {
-  display: block;
-  position: absolute;
-  right: 0;
-  padding-right: 1rem;
-}
-
 .hamb {
   --ham-width: 22px;
   cursor: pointer;
@@ -55,7 +34,6 @@
   background-color: black;
 }
 
-
 .hamb.show .hamb-line {
   transform: translate3d(0, 8px, 0) rotate(45deg);
 }
@@ -68,14 +46,180 @@
   transform: translate3d(0, -16px, 0) rotate(-90deg);
 }
 
+
+/* MOBILE */
+@media screen and (max-width: 768px) {  
+  .header {
+    position: fixed;
+    width: calc(100% - 1rem);
+    background: var(--bg-color);
+    box-shadow: 0px 0px 9px 9px var(--bg-color);
+    padding: 0.5rem 0.5rem 0.25rem;
+    margin-left: -0.5rem;
+  }
+
+  main {
+    padding-top: 50px;
+  }
+
+  .title {
+    flex-grow: 1;
+  }
+  
+  nav {
+    width: min-content;
+  }
+
+  .hamb {
+    display: inline-block;
+  }
+
+  .m-nav {
+    display: none;
+  }
+
+  .m-nav.show {
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    right: 0;
+    width: min-content;
+    align-items: flex-end;
+    z-index: 99;  
+    margin-top: 0.25rem;
+
+  }  
+
+  nav li:not(:last-of-type) {
+    padding-right: 0;
+  }
+
+  .m-nav li {
+    text-align: end;
+    width: min-content;
+    line-height: 1;
+  }
+
+  .m-nav li ul li {
+    padding-left: 0.5rem;
+  }
+
+  .m-nav li ul {
+    background-color: var(--bg-color);
+    box-shadow: 0 0 5px 5px var(--bg-color);
+    border-radius: 31px;
+    padding: 8px 15px;
+    height: 34px;
+    line-height: 1;
+  }
+
+  .home main, .info main {
+    flex-flow: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: calc(100vh - 25px);
+    grid-gap: 10px;
+  }
+
+  .subnav .tags li {
+    padding-left: 0.75rem;
+  }
+
+  .subnav {
+    overflow-x: auto;
+  }
+
+  section.works {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .work section > div {
+    max-width: 50%;
+  }
+
+  .work section > div:nth-of-type(2n) {
+    padding-right: 0;
+  }
+
+  .row a.img {
+    max-width: 300px;
+    min-width: 300px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .row .date {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  .row {
+    flex-flow: column;
+  }
+
+  .blog article {
+    width: 50%;
+  }
+
+  .tattoos main {
+    flex-flow: column;
+  }
+
+  .tattoos section {
+    width: auto;
+  }
+
+  .tattoos section:first-of-type {
+    padding-bottom: 1.5rem;
+    border-bottom: var(--thin-border);
+    margin-bottom: 1.5rem;
+  }
+
+}
+
+/* S MOBILE */
+
+@media screen and (max-width: 528px) {  
+  section.works {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
 /* DESKTOP */
 @media screen and (min-width: 769px) {  
+  .header {
+    padding-bottom: 1rem;
+  }
+
   .hamb {
     display: none;
   }
 
   .m-nav {
     display: flex;
+  }
+
+  .info .content {
+    margin-bottom: 0.75rem;
+  }
+
+  .work section > div:nth-of-type(3n) {
+    padding-right: 0;
+  }
+
+  .tattoos section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  section.tattoos img {
+    height: 15vw;
+  }
+
+  .tattoos section:first-of-type {
+    padding-left: 0;
+    border-right: var(--thin-border);
   }
 
 }

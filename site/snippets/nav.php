@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌏</text></svg>">
-
 	
   <?= css(['assets/css/global.css', 'assets/css/lightbox.css', 'assets/type/fonts.css', 'assets/css/responsive.css', '@auto',]) ?>
 </head>
@@ -19,7 +18,12 @@
       <a href="<?= $site->url() ?>"><?= $site->title()->lower() ?></a>
     </div>
     <nav>
-      <ul>
+      <div class="hamb">
+        <!-- <label for="side-menu"> -->
+        <div class="hamb-line">
+        </div>
+      </div>
+      <ul class="m-nav">
         <?php 
           snippet('nav_el', ['items' => $site->find("info")->children()->listed()]); 
           snippet('nav_el', ['items' => $site->children()->listed()->filterBy('folder', 'art')]);

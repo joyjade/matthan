@@ -1,5 +1,6 @@
 <?php snippet('nav');?>
 
+<main>
 <section class="<?= $page->format()?>">
   <div class="subnav">
     <a href="<?= $page->parent()->url() ?>">back to all notes</a>
@@ -22,5 +23,5 @@
 
   </article>
 </section>
-
+        </main>
 <?php snippet('footer') ?>

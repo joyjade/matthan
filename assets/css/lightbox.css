@@ -80,3 +80,22 @@
 .close:hover {
   color: #ccc;
 }
+
+@media screen and (max-width: 768px) {  
+  .lightbox-image {
+    max-width: 90vw;
+  }
+  .lightbox .nav {
+    bottom: 0px;
+    top: unset;
+    padding: 0; 
+  }
+
+  .left {
+    left: 20px;
+  }
+
+  .right {
+    right: 20px;
+  }
+}

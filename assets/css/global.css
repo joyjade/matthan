@@ -70,10 +70,14 @@ body {
   background-color: var(--bg-color);
 }
 
+body.blur main {
+  filter: blur(2px);
+}
+
 .header {
   display: flex;
-  padding-bottom: 1rem;
   padding-top: 0.25rem;
+  z-index: 10;
 }
 
 .title, nav {
@@ -127,7 +131,7 @@ ul.tags {
 
 /* HOME */
 
-.home main section, .info main {
+.home main, .info main {
   width: auto;
   height: calc(100vh - 65px);
   /* height: 400px; */
@@ -162,8 +166,9 @@ ul.tags {
   border-bottom: none;
 }
 
-.row figure {
+.row a.img {
   max-width: 350px;
+  min-width: 300px;
 }
 
 .row .details {
@@ -251,9 +256,6 @@ section.works {
   padding-bottom: 0.75rem;
 }
 
-.work section > div:nth-of-type(3n) {
-  padding-right: 0;
-}
 
 .work section {
   display: flex;
@@ -284,14 +286,8 @@ figcaption {
 .tattoos section {
   position: relative;
   width: 50%;
-  padding-right: 1rem;
-  padding-left: 1rem;
 }
 
-.tattoos section:first-of-type {
-  padding-left: 0;
-  border-right: var(--thin-border);
-}
 .tattoos section:last-of-type {
   padding-right: 0;
 }
@@ -448,8 +444,4 @@ section.tattoos figure:nth-of-type(4n) {
 
 .info .profile {
   margin-right: 1rem;
-}
-
-.info .content {
-  margin-bottom: 0.75rem;
 }
