@@ -14,11 +14,9 @@
             <p><?= $work->description()->kirbytext() ?></p>
         </div>
         <?php $cover = $work->cover()->toFile() ? $work->cover()->toFile() : $work->images()->first() ?>
-        <figure>
-          <a href="<?= $work->url() ?>">
-            <img src="<?= $cover->url() ?>" alt="">
-          </a>
-        </figure>
+        <a href="<?= $work->url() ?>">
+          <?php snippet('img', ['photo' => $cover]) ?>
+        </a>
     </div>
   <?php endforeach ?>
   </main>

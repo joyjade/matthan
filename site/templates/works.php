@@ -27,9 +27,7 @@
 
       <div class="item">
         <a href="<?= $work->url() ?>">
-          
           <?php snippet('img', ['photo' => $cover]) ?>
-
         </a>
       </div>
     <?php endforeach ?>
