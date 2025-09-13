@@ -161,6 +161,17 @@
     width: 50%;
   }
 
+  .blog article:nth-of-type(2n) {
+    padding-right: 0;
+  }
+
+  /* .entry section:not(.wide) article {
+
+  } */
+  .entry section:not(.wide) article {
+    width: 100%;
+  }
+
   .tattoos main {
     flex-flow: column;
   }
@@ -184,6 +195,9 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  section.tattoos img {
+    height: 33.33vw;
+  }
 }
 
 /* DESKTOP */
@@ -208,19 +222,21 @@
     padding-right: 0;
   }
 
+  .blog article:nth-of-type(5n) {
+    padding-right: 0;
+  }
+
   .tattoos section {
     padding-right: 1rem;
     padding-left: 1rem;
-  }
-
-  section.tattoos img {
-    height: 15vw;
   }
 
   .tattoos section:first-of-type {
     padding-left: 0;
     border-right: var(--thin-border);
   }
+
+
 
 }
 

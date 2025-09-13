@@ -313,7 +313,7 @@ section.tattoos figure {
 
 section.tattoos img {
   object-fit: cover;
-  height: 250px;
+  height: 15vw;
 }
 
 section.tattoos figure:nth-of-type(4n) {
@@ -350,9 +350,7 @@ section.tattoos figure:nth-of-type(4n) {
 .blog article {
   width: 20%;
   padding-right: 1rem;
-}
-.blog article:nth-of-type(5n) {
-  padding-right: 0;
+  padding-bottom: 1rem;
 }
 
 .blog section {
