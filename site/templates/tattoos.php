@@ -19,11 +19,11 @@
   </section>
   <section class="tattoos">
     <?php foreach($page->files()->sorted()->filterBy('template','tattoo-image') as $tattoo): ?>
-      <figure>
-        <img src="<?=$tattoo->url()?>" alt="">
-      </figure>
+      <?php snippet('lightbox-img', ['photo' => $tattoo]) ?>
     <?php endforeach ?>
   </section>
   
 </main>
+
+<?php snippet ('lightbox') ?>
 <?php snippet('footer') ?>

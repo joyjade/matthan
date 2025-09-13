@@ -157,6 +157,18 @@
     flex-flow: column;
   }
 
+  .work .heading .row, .exhibition .heading .row {
+    align-items: flex-start;
+  }
+
+  .exhibition section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work section, .exhibition section, .work .heading, .exhibition .heading {
+    padding-top: 0;
+  }
+
   .blog article {
     width: 50%;
   }
@@ -165,9 +177,6 @@
     padding-right: 0;
   }
 
-  /* .entry section:not(.wide) article {
-
-  } */
   .entry section:not(.wide) article {
     width: 100%;
   }
