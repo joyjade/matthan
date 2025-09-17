@@ -48,5 +48,9 @@ Icon
 # ---------------
 
 /site/config/.license
+/site/config/config.matthan.test.php
+
 /kirby
 /vendor
+
+.env
