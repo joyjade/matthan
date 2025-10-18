@@ -50,6 +50,9 @@
       <?php endif ?>
     </div>
     <div>
+      <?= $pagination->page() ?> of <?= $pagination->pages() ?>
+    </div>
+    <div>
       <?php if($pagination->hasNextPage()): ?>
       <a href="<?= $pagination->nextPageUrl() ?>">
         <span class="nav right">
