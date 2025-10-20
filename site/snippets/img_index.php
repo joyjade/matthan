@@ -3,7 +3,7 @@
 
 <figure>
   <img
-      loading="lazy"
+      loading="<?= $index < 4 ? 'eager' : 'lazy' ?>"
       alt="<?= $photo->alt() ?>"
       src="<?= $photo->url() ?>"
       srcset="<?= $photo->srcset([400, 600]) ?>"

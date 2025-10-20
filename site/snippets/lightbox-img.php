@@ -1,7 +1,6 @@
 <figure class="thumbnail">
-  <!-- <img src="<?= $photo->url() ?>" alt="<?= $photo->alt() ?>"> -->
   <img
-      loading="lazy"
+      loading="<?= $index < $cutoff ? 'eager' : 'lazy' ?>"
       alt="<?= $photo->alt() ?>"
       src="<?= $photo->url() ?>"
       srcset="<?= $photo->srcset([400, 900, 1800]) ?>"

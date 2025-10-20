@@ -18,8 +18,11 @@
     </div>
   </section>
   <section class="tattoos">
-    <?php foreach($page->files()->sorted()->filterBy('template','tattoo-image') as $tattoo): ?>
-      <?php snippet('lightbox-img', ['photo' => $tattoo]) ?>
+    <?php $i = 0; ?>
+    <?php foreach($page->files()->sortBy('modified')->filterBy('template','tattoo-image') as $tattoo): ?>
+      <?php
+        snippet('lightbox-img', ['photo' => $tattoo, 'index' => $i,  'cutoff' => 12]) ?>
+      <?php $i++; ?>
     <?php endforeach ?>
   </section>
   

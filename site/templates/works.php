@@ -28,12 +28,13 @@
   
 
   <section class="works">
+
     <?php foreach($entries as $work): ?>
       <?php $cover = $work->cover()->toFile() ? $work->cover()->toFile() : $work->images()->first() ?>
 
       <div class="item">
         <a href="<?= $work->url() ?>">
-          <?php snippet('img', ['photo' => $cover]) ?>
+          <?php snippet('img_index', ['photo' => $cover, 'index' => $work->indexOf()]) ?>
         </a>
       </div>
     <?php endforeach ?>
