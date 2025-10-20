@@ -120,6 +120,9 @@ ul.filter {
   padding-left: 0;
 }
 
+.filter-container .select:hover {
+  cursor: pointer;
+}
 
 
 ul.filter li {
