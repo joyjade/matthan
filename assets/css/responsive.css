@@ -118,6 +118,8 @@
     justify-content: flex-end;
     align-items: flex-start;
     height: calc(100vh - 25px);
+    height: calc(100svh - 25px);
+    height: calc(100dvh - 25px);
     grid-gap: 10px;
   }
 
