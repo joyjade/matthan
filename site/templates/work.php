@@ -17,7 +17,7 @@
   </div>
   
   
-  <section>
+  <section class="gallery">
     <?php foreach($page->images()->sorted() as $image): ?>
       <div>
         <?php 

@@ -148,6 +148,18 @@
     padding-right: 0;
   }
 
+  .work main {
+    display: flex;
+    flex-flow: column;
+    min-height: calc(100vh - 25px);
+    min-height: calc(100svh - 25px);
+    min-height: calc(100dvh - 25px);
+  }
+
+  .work .gallery {
+    flex-grow: 1;
+  }
+
   .row a.img {
     max-width: 300px;
     min-width: 300px;
