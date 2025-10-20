@@ -16,4 +16,6 @@ fields:
     label: Alt Text
     type: text
     width: 1/2
-  
+  date:
+    label: Date
+    value: "{{ file.date.toDate('d.m.Y') }}"

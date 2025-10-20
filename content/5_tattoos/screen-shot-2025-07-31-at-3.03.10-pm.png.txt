@@ -7,3 +7,7 @@ Uuid: eAQzWbhNETW4LV4t
 ----
 
 Template: tattoo-image
+
+----
+
+Sort: 2

@@ -7,3 +7,7 @@ Uuid: In8SxP04hPQMd4hc
 ----
 
 Template: tattoo-image
+
+----
+
+Sort: 1

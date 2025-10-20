@@ -37,8 +37,10 @@ tabs:
         sections:
           gallery:
             type: files
-            sortBy: modified desc
             label: Tattoos
+            search: true
+            sortBy: modified desc
+            batch: true
             layout: cards
             template: tattoo-image
 
