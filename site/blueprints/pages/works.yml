@@ -17,7 +17,7 @@ tabs:
         label: Works
         template: work
         layout: table
-        limit: 30
+        limit: 60
         search: true
         columns:
           dimensions: 
