@@ -19,6 +19,7 @@ tabs:
         layout: table
         limit: 60
         search: true
+        flip: true
         columns:
           dimensions: 
             width: 1/6

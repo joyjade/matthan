@@ -12,6 +12,11 @@ image:
   back: white
   cover: true
 
+create:
+  title:
+    label: New Work
+  fields:
+    - year
 
 columns:
   right:
