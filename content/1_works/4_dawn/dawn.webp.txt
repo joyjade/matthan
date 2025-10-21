@@ -1,0 +1,17 @@
+Caption: 
+
+----
+
+Alt: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: jucelobwrvd23dtu
+
+----
+
+Template: work-image

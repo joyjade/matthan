@@ -1,0 +1,17 @@
+Caption: (installation view)
+
+----
+
+Alt: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: crzb4lijncutw0zj
+
+----
+
+Template: work-image

@@ -1,0 +1,17 @@
+Caption: 
+
+----
+
+Alt: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: c6hasujrtalsqpc5
+
+----
+
+Template: work-image

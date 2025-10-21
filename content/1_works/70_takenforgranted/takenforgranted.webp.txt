@@ -1,0 +1,17 @@
+Caption: (impermanent installation)
+
+----
+
+Alt: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: frqobg1p6ekatkod
+
+----
+
+Template: work-image
