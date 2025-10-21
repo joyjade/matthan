@@ -3,7 +3,7 @@
 return function($page) {
 
 // fetch the basic set of pages
-$entries = $page->children()->listed();
+$entries = $page->children()->listed()->flip();
 
 // fetch all tags
 $tags = $entries->pluck('tags', ',', true);
