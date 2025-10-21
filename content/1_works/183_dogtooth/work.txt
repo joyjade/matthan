@@ -1,8 +1,8 @@
-Title: ANTERBLOCK
+Title: DOGTOOTH I & II
 
 ----
 
-Cover: 
+Cover: - file://cnrM0Rf2Z5HS3SEF
 
 ----
 
@@ -22,4 +22,4 @@ Tags: painting
 
 ----
 
-Uuid: qNfpmTNkWDNB3Zcu
+Uuid: SBd8Ymstf4IJxzns

@@ -1,0 +1,17 @@
+Caption: 
+
+----
+
+Alt: 
+
+----
+
+Sort: 1
+
+----
+
+Uuid: wgyw34ntsj5g7f2t
+
+----
+
+Template: work-image
