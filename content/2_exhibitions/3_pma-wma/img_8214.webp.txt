@@ -1,0 +1,21 @@
+Caption:
+
+PMA/WMA Installation 2016
+
+(semi-permanent)
+
+----
+
+Alt: 
+
+----
+
+Sort: 12
+
+----
+
+Uuid: l5shnsojhi0tjzod
+
+----
+
+Template: work-image

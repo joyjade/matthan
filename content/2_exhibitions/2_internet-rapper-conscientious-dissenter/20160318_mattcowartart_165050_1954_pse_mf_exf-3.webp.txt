@@ -1,0 +1,17 @@
+Caption: (Ramp from a Boneyard)
+
+----
+
+Alt: 
+
+----
+
+Sort: 7
+
+----
+
+Uuid: idkxdazahjvnh7bx
+
+----
+
+Template: work-image

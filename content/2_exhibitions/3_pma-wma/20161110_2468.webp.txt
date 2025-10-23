@@ -1,0 +1,17 @@
+Caption: WhiteMaleArtist Installation 2016
+
+----
+
+Alt: 
+
+----
+
+Sort: 24
+
+----
+
+Uuid: ewisljv0c4cofbpi
+
+----
+
+Template: work-image

@@ -1,0 +1,17 @@
+Caption: PositiveMentalAttitude Installation 2016
+
+----
+
+Alt: 
+
+----
+
+Sort: 9
+
+----
+
+Uuid: lbr0qbdcmst3wio8
+
+----
+
+Template: work-image

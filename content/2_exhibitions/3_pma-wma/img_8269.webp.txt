@@ -1,0 +1,17 @@
+Caption: (BMB) PositiveMentalAttitude Installation 2016
+
+----
+
+Alt: 
+
+----
+
+Sort: 7
+
+----
+
+Uuid: vcuftehwi9ccnynm
+
+----
+
+Template: work-image

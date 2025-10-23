@@ -1,0 +1,21 @@
+Caption:
+
+StripMall
+
+2018
+
+----
+
+Alt: 
+
+----
+
+Sort: 7
+
+----
+
+Uuid: 9e9jp5dfhazq4y6y
+
+----
+
+Template: work-image

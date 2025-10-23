@@ -1,0 +1,17 @@
+Caption: (A Cloud Painting)
+
+----
+
+Alt: 
+
+----
+
+Sort: 8
+
+----
+
+Uuid: i2m0pnjy11e975zh
+
+----
+
+Template: work-image

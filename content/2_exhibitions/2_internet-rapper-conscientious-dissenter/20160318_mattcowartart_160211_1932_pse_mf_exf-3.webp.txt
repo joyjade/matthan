@@ -1,0 +1,17 @@
+Caption: (SpiritOfTheBadboy)
+
+----
+
+Alt: 
+
+----
+
+Sort: 12
+
+----
+
+Uuid: ng4uijqrcusvoirf
+
+----
+
+Template: work-image
