@@ -4,6 +4,9 @@ title: Exhibition
 #   url: false
 #   status: false
 #   delete: false
+image:
+  query: page.cover.toFile
+  cover: true
 
 navigation:
   status: all

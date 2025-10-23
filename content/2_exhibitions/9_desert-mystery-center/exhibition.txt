@@ -10,6 +10,10 @@ Description: Carcasses,  Elementals,  Gut  Divinations Devotional  Offerings,  S
 
 ----
 
+Cover: - file://qD485ooWh4vU5FE2
+
+----
+
 Text: 
 
 ----
