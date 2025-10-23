@@ -1,5 +1,5 @@
 <?php snippet('nav');
-  $works = $page->children()->listed();
+  $works = $page->children()->listed()->flip();
 ?>
 
 <main>

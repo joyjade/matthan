@@ -20,6 +20,7 @@ tabs:
       exhibitions:
         type: pages
         layout: list
+        flip: true
         template: exhibition
         empty: No exhibitions yet
 
